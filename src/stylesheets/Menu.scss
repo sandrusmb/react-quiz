@@ -1,0 +1,30 @@
+.header {
+  background: #22252e;
+  margin: 0;
+  padding: 0;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+    justify-content: flex-end;
+
+    &-element {
+      background: #0e0f12;
+      margin: 0 5px;
+      padding: 5px 10px;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-family: "Fjalla One", sans-serif;
+      cursor: pointer;
+    }
+  }
+}
+
+.fas {
+  margin-right: 5px;
+}
