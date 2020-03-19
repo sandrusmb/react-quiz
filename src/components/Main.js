@@ -1,5 +1,6 @@
 import React from "react";
 import "../stylesheets/Main.scss";
+import Tool from "./Tool";
 
 function Main() {
   return (
@@ -45,6 +46,7 @@ function Main() {
           <td className="main__table__regular-author">Karen</td>
         </tr>
       </table>
+      <Tool />
     </main>
   );
 }
