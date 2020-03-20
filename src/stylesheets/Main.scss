@@ -13,6 +13,7 @@
 
   &__table {
     min-width: 50%;
+
     &__bold {
       font-weight: bold;
       font-size: 1em;
@@ -21,6 +22,21 @@
 
       &-item {
         padding: 5px 10px;
+
+        &-id {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+
+          &-span {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-left: 5px;
+          }
+        }
       }
     }
 
@@ -42,6 +58,28 @@
         padding: 5px 10px;
       }
     }
+  }
+}
+
+.fa-sort-up {
+  color: #00b584;
+  transform: translateY(7px) scale(1.2);
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(7px) scale(2);
+    padding-left: 5px;
+  }
+}
+
+.fa-sort-down {
+  color: #00b584;
+  transform: translateY(-7px) scale(1.2);
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-5px) scale(2);
+    padding: 0 0 2px 5px;
   }
 }
 
