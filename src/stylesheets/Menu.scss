@@ -22,6 +22,11 @@
       font-family: "Fjalla One", sans-serif;
       cursor: pointer;
       font-size: 1em;
+      &:hover {
+        transform: scale(1.1);
+        color: #00d79d;
+        transition: color ease 1s;
+      }
     }
   }
 }
