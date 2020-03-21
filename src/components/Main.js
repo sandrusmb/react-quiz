@@ -1,58 +1,31 @@
 import React from "react";
 import "../stylesheets/Main.scss";
-import Tool from "./Tool";
 
-function Main() {
+function Main(props) {
   return (
     <main className="main">
       <h1 className="main__title">Browse Questions</h1>
+      <button className="main__btn" onClick={props.getQuestions}>
+        Search
+      </button>
       <table className="main__table">
-        <tr className="main__table__bold">
-          <td className="main__table__bold-item-id">
-            ID
-            <span className="main__table__bold-item-id-span">
-              <i class="fas fa-sort-up"></i>
-              <i class="fas fa-sort-down"></i>
-            </span>
-          </td>
-          <td className="main__table__bold-item">Category</td>
-          <td className="main__table__bold-item">Type</td>
-          <td className="main__table__bold-item">Difficulty</td>
-          <td className="main__table__bold-item">Question/ Statement</td>
-          <td className="main__table__bold-item">Created By</td>
-        </tr>
-        <tr className="main__table__regular">
-          <td className="main__table__regular-item">9493</td>
-          <td className="main__table__regular-item">Science: Computers</td>
-          <td className="main__table__regular-item">Multiple choice</td>
-          <td className="main__table__regular-item">Easy</td>
-          <td className="main__table__regular-question">
-            What does the computer software acronym JVM stand for?
-          </td>
-          <td className="main__table__regular-author">Karen</td>
-        </tr>
-        <tr className="main__table__regular">
-          <td className="main__table__regular-item">9493</td>
-          <td className="main__table__regular-item">Science: Computers</td>
-          <td className="main__table__regular-item">Multiple choice</td>
-          <td className="main__table__regular-item">Easy</td>
-          <td className="main__table__regular-question">
-            What does the computer software acronym JVM stand for?
-          </td>
-          <td className="main__table__regular-author">Karen</td>
-        </tr>
-        <tr className="main__table__regular">
-          <td className="main__table__regular-item">9493</td>
-          <td className="main__table__regular-item">Science: Computers</td>
-          <td className="main__table__regular-item">Multiple choice</td>
-          <td className="main__table__regular-item">Easy</td>
-          <td className="main__table__regular-question">
-            What does the computer software acronym JVM stand for?
-          </td>
-          <td className="main__table__regular-author">Karen</td>
-        </tr>
+        <thead>
+          <tr className="main__table__bold">
+            <th className="main__table__bold-item-id">
+              ID
+              <span className="main__table__bold-item-id-span">
+                <i className="fas fa-sort-up"></i>
+                <i className="fas fa-sort-down"></i>
+              </span>
+            </th>
+            <th className="main__table__bold-item">Category</th>
+            <th className="main__table__bold-item">Type</th>
+            <th className="main__table__bold-item">Difficulty</th>
+            <th className="main__table__bold-item">Question/ Statement</th>
+            <th className="main__table__bold-item">Created By</th>
+          </tr>
+        </thead>
       </table>
-      <Tool />
     </main>
   );
 }
