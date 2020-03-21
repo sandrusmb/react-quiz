@@ -2,8 +2,8 @@ import React from "react";
 import "../stylesheets/App.css";
 import Menu from "./Menu";
 import Main from "./Main";
-import QuestionList from "./QuestionList";
-import Tool from "./Tool";
+/* import QuestionList from "./QuestionList"; */
+/* import Tool from "./Tool"; */
 
 class App extends React.Component {
   state = {
@@ -29,9 +29,10 @@ class App extends React.Component {
     return (
       <div className="App">
         <Menu />
-        <Main getQuestions={this.getQuestions} />
-        <QuestionList questions={this.state.questions} />
-        <Tool />
+        <Main
+          getQuestions={this.getQuestions}
+          questions={this.state.questions}
+        />
       </div>
     );
   }

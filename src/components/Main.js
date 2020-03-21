@@ -1,5 +1,7 @@
 import React from "react";
 import "../stylesheets/Main.scss";
+import QuestionList from "./QuestionList";
+import Tool from "./Tool";
 
 function Main(props) {
   return (
@@ -25,7 +27,12 @@ function Main(props) {
             <th className="main__table__bold-item">Created By</th>
           </tr>
         </thead>
+        <tbody className="table">
+          <QuestionList questions={props.questions} />
+        </tbody>
       </table>
+
+      <Tool />
     </main>
   );
 }
