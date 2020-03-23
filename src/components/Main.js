@@ -7,9 +7,26 @@ function Main(props) {
   return (
     <main className="main">
       <h1 className="main__title">Browse Questions</h1>
-      <button className="main__btn" onClick={props.getQuestions}>
-        Search
-      </button>
+      <form className="main__form" onSubmit={props.getQuestions}>
+        <input
+          type="number"
+          className="main__form-number"
+          placeholder="Number of questions"
+        ></input>
+        <select className="main__form-type">
+          <option value="">Any Type</option>
+          <option value="multiple">Multiple Choice</option>
+          <option value="boolean">True/False</option>
+        </select>
+        <select className="main__form-difficulty">
+          <option value="">Any Difficulty</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+
+        <button className="main__form-btn">Search</button>
+      </form>
       <table className="main__table">
         <thead>
           <tr className="main__table__bold">

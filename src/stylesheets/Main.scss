@@ -13,19 +13,43 @@
     font-family: "Merriweather Sans", sans-serif;
   }
 
-  &__btn {
-    color: #ffffff;
-    width: 100px;
-    height: 50px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    cursor: pointer;
-    background: #00b584;
-    border-radius: 15px;
-    font-size: 1em;
-    margin-bottom: 20px;
-    border: none;
+  &__form {
+    &-number {
+      width: 25%;
+      height: 50px;
+      margin-right: 3%;
+      font-size: 1em;
+      padding-left: 10px;
+      cursor: pointer;
+    }
+
+    &-type {
+      width: 25%;
+      height: 50px;
+      margin-right: 3%;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    &-difficulty {
+      width: 25%;
+      height: 50px;
+      margin-right: 3%;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    &-btn {
+      color: #ffffff;
+      width: 15.5%;
+      height: 50px;
+      cursor: pointer;
+      background: #00b584;
+      border-radius: 15px;
+      font-size: 1em;
+      margin-bottom: 20px;
+      border: none;
+    }
   }
 
   &__table {

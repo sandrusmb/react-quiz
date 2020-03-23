@@ -7,7 +7,7 @@ function QuestionList(props) {
     <React.Fragment>
       {props.questions.map(question => {
         return (
-          <tr className="table__container">
+          <tr className="table__container" key={question.question}>
             <td className="table__container-item">9493</td>
             <td className="table__container-item">{question.category}</td>
             <td className="table__container-item">
@@ -34,6 +34,3 @@ function QuestionList(props) {
 }
 
 export default QuestionList;
-
-/* &#039; */
-/* &quot; */

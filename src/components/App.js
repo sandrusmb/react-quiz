@@ -2,8 +2,6 @@ import React from "react";
 import "../stylesheets/App.css";
 import Menu from "./Menu";
 import Main from "./Main";
-/* import QuestionList from "./QuestionList"; */
-/* import Tool from "./Tool"; */
 
 class App extends React.Component {
   state = {
@@ -12,8 +10,13 @@ class App extends React.Component {
 
   getQuestions = async ev => {
     ev.preventDefault();
-    console.log(ev);
-    const api_call = await fetch(`https://opentdb.com/api.php?amount=10`);
+    console.log(ev.target.elements[1].value);
+    const numberOfQuestions = ev.target.elements[0].value;
+    const difficultyValue = ev.target.elements[2].value;
+    const typeValue = ev.target.elements[1].value;
+    const api_call = await fetch(
+      `https://opentdb.com/api.php?amount=${numberOfQuestions}&difficulty=${difficultyValue}&type=${typeValue}`
+    );
     const data = await api_call.json();
     console.log(data.results);
 
