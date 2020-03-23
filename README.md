@@ -4,6 +4,8 @@
 
 Crear una maqueta replicando la siguiente imagen. La única tecnología obligatoria a usar es React como librería de componentes.
 
+![Diseño](https://github.com/sandrusmb/react-quiz/blob/master/src/images/prueba-dise%C3%B1o.png?raw=true)
+
 Se debe replicar completamente, incluido el menú de navegación superior. El menú no debe tener ninguna lógica, sólo estar maquetado.
 
 Extra 1: obtener los datos desde https://opentdb.com/api_config.php
@@ -39,6 +41,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
       - [x] QuestionList.js (he incluido una serie de condicionales ternarios y expresiones regulares para que al pintar las preguntas del trivial se busquen y sustituyan &quot; por comillas y &#039; por apóstrofe y mejorar así la lectura para el usuario)
       - [x] QuestionList.scss
       - [x] Tool.js
+      - [x] Tool.scss
 
 - [x] Hacer el fetch y obtener los datos
 - [x] Filtrar los datos en función del número de resultados, el tipo de pregunta y el nivel de dificultad
@@ -59,3 +62,5 @@ Para las tipografías he usado [Google Fonts](https://fonts.google.com/) y para 
 - npm start
 
 # Demo de mi solución
+
+![Demo](https://github.com/sandrusmb/react-quiz/blob/master/src/images/demo-fintonic.gif?raw=true)
