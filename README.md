@@ -1,68 +1,61 @@
+## Prueba técnica Fintonic
+
+# Instrucciones
+
+Crear una maqueta replicando la siguiente imagen. La única tecnología obligatoria a usar es React como librería de componentes.
+
+Se debe replicar completamente, incluido el menú de navegación superior. El menú no debe tener ninguna lógica, sólo estar maquetado.
+
+Extra 1: obtener los datos desde https://opentdb.com/api_config.php
+
+Extra 2: crear formulario para el filtrado de cuestiones.
+
+El entregable debe ser una url a un repositorio de github/gitlab/bitbucket
+
+Se puede partir de cualquier base propia o pública disponible en internet para la creación del proyecto base.
+
+Se valorará:
+
+- simplicidad de la solución: se intenta que se dedique a la prueba unas 3 horas como máximo. Se pueden aportar TODOs en un README para indicar que cosas se añadirían y como.
+
+- ceñirse a lo requerido en el enunciado
+
+- prueba sea coherente con las respuestas aportadas al cuestionario inicial
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Paso a paso
 
-In the project directory, you can run:
+- [x] Crear el proyecto de React
+- [x] Limpiar el código y crear los archivos necesarios
 
-### `npm start`
+- [x] Hacer la maquetación por componentes con la siguiente estructura:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  - [x] App.js
+    - [x] Menu.js
+    - [x] Menu.scss (seguir el diseño y añadir un hover con transición)
+    - [x] Main.js
+    - [x] Main.scss (tras valorar la mejor manera de maquetar con flexbox, grid o tablas, he optado por utilizar las tablas poniendo especial cuidado en la semántica)
+      - [x] QuestionList.js (he incluido una serie de condicionales ternarios y expresiones regulares para que al pintar las preguntas del trivial se busquen y sustituyan &quot; por comillas y &#039; por apóstrofe y mejorar así la lectura para el usuario)
+      - [x] QuestionList.scss
+      - [x] Tool.js
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- [x] Hacer el fetch y obtener los datos
+- [x] Filtrar los datos en función del número de resultados, el tipo de pregunta y el nivel de dificultad
 
-### `npm test`
+# Tecnologías utilizadas
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- HTML5
+- CSS3
+- Sass
 
-### `npm run build`
+Para las tipografías he usado [Google Fonts](https://fonts.google.com/) y para los iconos [Font Awesome](https://fontawesome.com/).
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Cómo utilizar este código
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Descarga el repositorio
+- npm install
+- npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+# Demo de mi solución
