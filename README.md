@@ -24,8 +24,6 @@ Se valorará:
 
 - prueba sea coherente con las respuestas aportadas al cuestionario inicial
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 # Paso a paso
 
 - [x] Crear el proyecto de React
